@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Airport Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+
+    <h1> Airport Management System</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Visitors</h3>
+            <p id="visitorCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Flights</h3>
+            <p id="flightCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Gates</h3>
+            <p id="gateCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Entry Logs</h3>
+            <p id="entryCount">0</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Register Visitor -->
+    <div class="form-container">
+
+        <h2>Register New Visitor</h2>
+
+        <form id="visitorForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Visitor Name"
+                required
+            >
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <select id="id_type" required>
+                <option value="">Select ID Type</option>
+                <option value="Aadhaar">Aadhaar</option>
+                <option value="Passport">Passport</option>
+                <option value="Driving License">Driving License</option>
+                <option value="Voter ID">Voter ID</option>
+            </select>
+
+            <input
+                type="text"
+                id="id_number"
+                placeholder="ID Number"
+                required
+            >
+
+            <button type="submit">
+                Register Visitor
+            </button>
+
+        </form>
+
+    </div>
+
+
+<!-- Registered Visitors -->
+    <h2 class="table-title">Registered Visitors</h2>
+
+
+<!-- Search Section -->
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter name, phone or ID number"
+        >
+
+        <button id="searchButton" type="button">
+            Search
+        </button>
+
+        <button id="clearButton" type="button">
+            Clear
+        </button>
+
+    </div>
+
+<!-- Visitor Table -->
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>ID Type</th>
+                <th>ID Number</th>
+            </tr>
+        </thead>
+
+        <tbody id="visitorData">  <!-- Visitor data will appear here -->
+        </tbody>
+
+    </table>
+
+<!-- Flights Section -->
+<h2 class="table-title">Flight Information</h2>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Flight ID</th>
+            <th>Flight Number</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+        </tr>
+    </thead>
+
+    <tbody id="flightData">   <!-- Flight data will appear here -->
+    </tbody>
+</table>
+
+<!-- Gates Section -->
+<h2 class="table-title">Gate Information</h2>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Gate ID</th>
+            <th>Gate Name</th>
+        </tr>
+    </thead>
+
+    <tbody id="gateData">   <!-- Gate data will appear here -->
+    </tbody>
+
+</table>
+
+
+<!-- Entry Logs Section -->
+
+<h2 class="table-title">Airport Entry Logs</h2>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Entry ID</th>
+            <th>Visitor ID</th>
+            <th>Flight ID</th>
+            <th>Gate ID</th>
+            <th>Entry Time</th>
+            <th>Security Status</th>
+        </tr>
+    </thead>
+
+    <tbody id="entryData">    <!-- Entry logs will appear here -->
+    </tbody>
+
+</table>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
+
+

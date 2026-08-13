@@ -1,0 +1,253 @@
+/* General page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Main heading */
+h1 {
+    background-color: #1f2937;
+    color: white;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Register visitor box */
+.form-container {
+    width: 85%;
+    margin: 30px auto 20px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+/* Form layout */
+#visitorForm {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Input and dropdown */
+#visitorForm input,
+#visitorForm select {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Input focus */
+#visitorForm input:focus,
+#visitorForm select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Register button */
+#visitorForm button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Button hover */
+#visitorForm button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Table heading */
+.table-title {
+    width: 90%;
+    margin: 35px auto 15px;
+    color: #1f2937;
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table headings */
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Table cells */
+td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate rows */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Hover */
+tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+/* Last row */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+
+    .form-container {
+        width: 80%;
+    }
+
+    #visitorForm {
+        flex-direction: column;
+    }
+
+    #visitorForm input,
+    #visitorForm select,
+    #visitorForm button {
+        width: 100%;
+    }
+
+    table {
+        width: 95%;
+        font-size: 13px;
+    }
+}
+/* Search box */
+.search-container {
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Search section */
+
+.search-container {
+    width: 90%;
+    margin: 0 auto 25px;
+    display: flex;
+    gap: 10px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+#searchButton,
+#clearButton {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#searchButton {
+    background-color: #2563eb;
+    color: white;
+}
+
+#searchButton:hover {
+    background-color: #1d4ed8;
+}
+
+#clearButton {
+    background-color: #6b7280;
+    color: white;
+}
+
+#clearButton:hover {
+    background-color: #4b5563;
+}
+
+/* Dashboard */
+
+.dashboard {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
